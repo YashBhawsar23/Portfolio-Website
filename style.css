@@ -187,23 +187,11 @@ strong {
   font-weight: bold;
 }
 
-address {
-  text-align: center;
-  margin: 20px 0px;
-}
 
-#vikasparmar-social {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 88px;
-}
+
 
 a {
-  color: #89728f;
+  color: black;
   text-decoration: none;
 }
 
@@ -266,9 +254,7 @@ a:hover {
   color: #2b7bbc;
 }
 
-#projects {
-  position: relative;
-}
+
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -279,47 +265,9 @@ a:hover {
   border: #000 1px solid;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-  margin-bottom: 30px;
-}
 
-.project-title {
-  margin: 2rem;
-  color: black;
-}
 
-/* Project Image Animation */
 
-.image-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.image-container img {
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover img {
-  opacity: 0.7;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover .image-overlay {
-  opacity: 1;
-}
 
 
 .btn-container {
@@ -377,7 +325,12 @@ a:hover {
   gap: 1rem;
 }
 
-/* Linkedin & Github Profile */
+address {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/* Linkedin & Github Profile Links */
 
 .l-g-parent {
   display: flex;
@@ -438,4 +391,35 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* Projects Section */
+
+.project1 {
+  border: 2px solid #89728f;
+  border-radius: 30px;
+}
+
+.project1>.project-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+}
+
+.project-img img {
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  height: 90%;
+  width: 90%;
+}
+
+.project1>.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
